@@ -1,9 +1,13 @@
+.page {
+    background-color: darkslategrey;
+}
+
 .introContainer {
    width: 80%;
    height: 100px;
    padding: 5px 5px 5px 5px;
    border: solid 2px black;
-   background-color: antiquewhite;
+   background-color: lightgrey;
    position: relative;
    font-size: 30pt;
    text-align: center;
@@ -12,7 +16,7 @@
 
 .body {
     width: 75%;
-    height: 700px;
+    height: 1000px;
     padding: 5px 5px 5px 5px;
     border: solid 2px black;
     background-color: lightgray;
@@ -23,4 +27,19 @@
     margin-top: 20px;
     
 }
+
+.exCode {
+    width: 75%;
+    height: 40px;
+    padding: 5px 5px 5px 5px;
+    border: solid 2px black;
+    background-color: darkslategray;
+    position: relative;
+    font-size: 14pt;
+    text-align: left;
+    color: white;
+    margin: auto;
+    margin-top: 30px;
+}
+
 
