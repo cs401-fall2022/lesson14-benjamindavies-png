@@ -25,7 +25,7 @@ I have experience making a github-pages site, so this was pretty straightforward
 
 ## Known issues or Bugs
 
-None
+Google page does not use my style.css file when creating the website.
 
 ## Sources used
 
