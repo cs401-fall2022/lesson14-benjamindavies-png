@@ -1,7 +1,7 @@
 # Retrospective
 
-- name: Jane Doe
-- email: janedoe@u.boisestate.edu
+- name: Ben Davies
+- email: benjamindavies@u.boisestate.edu
 
 ## Instructions
 
@@ -21,12 +21,14 @@ Be safe CITE!
 
 ## Experience
 
-TODO
+I have experience making a github-pages site, so this was pretty straightforward to set up. 
 
 ## Known issues or Bugs
 
-TODO
+None
 
 ## Sources used
 
-TODO
+https://pages.github.com/ 
+
+https://shanep-web.github.io/lessons/lesson14.html 
