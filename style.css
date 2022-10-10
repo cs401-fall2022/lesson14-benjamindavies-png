@@ -1,6 +1,18 @@
-/* CSS Styling for Github page */
 
-head1 {
-    font-size: 24pt;
-    color: red;
-}
+h2{
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: Arial;
+    font-style: italic;
+    color: blue;
+    
+  }
+
+
+  .container {
+    width: 600px;
+    height: 280px;
+    background-color: #F0F0F0;
+    padding: 5px 5px 5px 5px;
+    border: solid 2px blue;
+  }
