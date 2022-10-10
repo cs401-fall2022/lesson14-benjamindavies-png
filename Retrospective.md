@@ -21,14 +21,17 @@ Be safe CITE!
 
 ## Experience
 
-I have experience making a github-pages site, so this was pretty straightforward to set up. 
+I have experience making a github-pages site, so this was pretty straightforward to set up. I had to look at the previous lab to figure out some formatting issues with my CSS, but 
+it turned out that I just forgot to change the reference to where the file was in the HTML code. I had the same issue with Pages, where my live-browser view would be correct but my Pages site would not use the CSS code. I figured out that it was because there was a '/' in the filename, which for some reason was only causing errors in Github pages. I look forward to working on this website and completing it in the coming weeks.
 
 ## Known issues or Bugs
 
-Google page does not use my style.css file when creating the website.
+None
 
 ## Sources used
 
 https://pages.github.com/ 
 
 https://shanep-web.github.io/lessons/lesson14.html 
+
+https://www.w3schools.com/css/ 
