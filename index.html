@@ -27,7 +27,22 @@
         Will include examples of how types work in TS (types by inference, generic typing, etc).
 
         <div class="exCode">
-            Code will go here
+            function turnRed() { <br>
+                &emsp;   if(document != null){ <br>
+            &emsp;&emsp; let c = document.getElementById("demo").style.color; <br>
+            &emsp;       if(c === 'red'){<br>
+            &emsp;&emsp; document.getElementById("demo").style.color = "black";<br>
+            &emsp;       }else{<br>
+            &emsp;&emsp;  document.getElementById("demo").style.color = "red";<br>
+            &emsp;&emsp;        }<br>
+            &emsp;    } <br>   
+            &emsp;}
+
+            <h1 id="demo" onclick="turnRed()">Click ME!</h1>
+            <script type="module">
+                import {turnRed} from '/build/app.js'
+                window.turnRed = turnRed;
+            </script>
         </div>
 
     </div>
