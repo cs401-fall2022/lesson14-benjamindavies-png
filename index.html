@@ -17,15 +17,18 @@
     </div>
 
     <div class="body">
-        Introduction to TS. Includes what type of programming language it is and what it is used for.
+        &emsp;TypeScript is a programming language built strongly off the idea of typing, as you might have guessed.
+        When compiled, typescript files are turned into JavaScript files that can be understood by the browser, which makes this language useful for web development.
+        TypeScript is also able to communicate directly with your HTML files in order to perform actions on your webpage. 
+        As a JavaScript developer, you can think of TypeScript as a more strongly typed JavaScript which can perform the same actions as JS, and then some.
+        
         <br>
         <br>
         <br>
-        <br>
+        Below is a code example showing a bit of what you can do with TypeScript.
+        
 
-        <h2>Types</h2>
-        Will include examples of how types work in TS (types by inference, generic typing, etc).
-
+      
         <div class="exCode">
             function turnRed() { <br>
                 &emsp;   if(document != null){ <br>
@@ -45,6 +48,56 @@
             </script>
         </div>
 
+        <h2>Types</h2>
+       TypeScript is essentially an extension of JavaScript, and thus it knows the language and the types.
+        The set of primitive types are as follows: boolean, bigint, null, number, string, symbol, and undefined.
+       <h3>Type by Inference</h3>
+       One way typing works in TS is by inference, where it looks at the value that was assigned to something and determines what it is.
+
+       <div class="exCode2">
+        let name = "John Doe";<br>
+        let age = 24;
+       </div>
+       <br>
+       In the examples above, TypeScript looks at the values John Doe and 24,
+       and identifies that they are a string and number respectively. 
+       This way of typing helps reduce clutter, because you don't need code to 
+       explicitly say what the type is.
+       
+       <h3>Defining Types</h3>
+       Inference typing may not always work, such as for creation of objects. 
+       To help, TypeScript supports the extension that allows for you to tell TS what the types should be.
+       One way to do this is by creating an object with inferred typing, or by using an interface as shown below.
+       
+       <div class="exCode3">
+        interface student {<br>
+        &emsp;   name: string;<br>
+        &emsp;   grade: number; <br>
+        }<br>
+        <br>
+        const student: Student = {<br>
+        &emsp;    name: "John",<br>
+        &emsp;    grade: 11,<br>
+        };
+       </div>
+
+       <h3>Structural Type System</h3>
+       In inference typing TypeScript looks at the value assigned, but it can also look at the structure of an object to determine type.
+       In this system, if two objects have the same shape, they are inferred to be the same type.
+       For example, if an interface us created but the object isn't created by means of the interface. TypeScript looks at the shape of these objects to determine similarity/type.
+
+       <div class="exCode4">
+        interface Bank {<br>
+        &emsp;   id: string;<br>
+        &emsp;   accountNumber: number; <br>
+        }<br>
+        <br>
+        const bank = { id: "johnbank123", accountNumber: 123456789 };<br>
+       </div>
+       <br>
+       In the example above, the code to instantiate the 'bank' variable did not use the 
+       interface syntax in the previous example, but since the shape of the interface is the same
+       as the object, TypeScript would infer that 'bank' is a Bank object.
     </div>
 
 </div>
